@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      body {
+        background-image: url("background.png");
+        background-repeat: repeat;
+        background-color: #F7CAC9;
+        background-position: left top;
+      }
+
+      nav {
+        height: 85px;
+      }
+
+      .timeline {
+        width: 95%;
+        margin: 15px auto;
+      }
+
+      hr {
+        margin: 3px 0;
+        border: 0;
+        border-top: 1px solid #414141;
+      }
+
+      .brand-logo {
+        height: 72px;
+        top: 0.5rem;
+      }
+
+      .fade-in {
+        opacity: 0;
+      }
+
+      .blanc {
+        background-color: white;
+      }
+
+      .noir {
+        color: #414141;
+      }
+
+      .rose-quartz {
+        background-color: #F7CAC9;
+      }
+
+      .timeline .timeline-block {
+        display: flex;
+        flex-direction: row;
+        position:relative;
+      }
+
+      .timeline .timeline-block-content {
+        margin-left: 50px;
+        padding-bottom: 30px;
+        width: 80%;
+      }
+
+      .timeline .timeline-block-content p {
+        margin: 1px 0;
+      }
+
+      .timeline .timeline-block-content img {
+        width: 100%;
+        height: auto;
+      }
+
+      .timeline .timeline-date {
+        margin-left: 30px;
+        font-size: 12px;
+        padding-bottom: 5px;
+      }
+
+      .timeline .line {
+        padding-left: 5px;
+        position:absolute;
+        height: 105%;
+      }
+
+      .timeline .line ellipse {
+        fill: #414141;
+      }
+
+      .timeline .line rect {
+        fill: #414141;
+      }
+
+      .heure {
+        font-size: 10px;
+        line-height: 10px;
+      }
+
+      .heure p {
+        margin: 0;
+      }
+
+      .timeline .timeline-block-content video {
+        width: 100%    !important;
+        height: auto   !important;
+      }
+
+      .timeline .timeline-block-content audio {
+        width: 100%    !important;
+        height: auto   !important;
+        padding-top: 38px;
+      }
+
+      .timeline ellipse {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper blanc">
+        <img src="logo.png" class="left brand-logo" />
+        <div class="right">
+           <i class="material-icons noir" style="padding-right: 20px;">menu</i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="timeline">
+
+      <!-- Début -->
+      <div class="timeline-block" style="height: 20px;">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+        </svg>
+      </div>
+
+      <!-- Date -->
+      <div class="timeline-block">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+        </svg>
+        <div class="timeline-date fade-in">
+          <div>Aujourd'hui</div>
+        </div>
+      </div>
+
+      <!-- Texte -->
+      <div class="timeline-block">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+          <ellipse cx="10" cy="20%" rx="10" ry="10" />
+        </svg>
+        <div class="timeline-block-content fade-in">
+          <p>
+            Son dernier chef d'œuvre. :D
+          </p>
+          <hr />
+          <div class="heure right">
+            <p>16h58</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="timeline-block">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+          <ellipse cx="10" cy="20%" rx="10" ry="10" />
+        </svg>
+        <div class="timeline-block-content fade-in">
+          <img src="dessin.jpg">
+          <hr />
+          <div class="heure right">
+            <p>16h58</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texte -->
+      <div class="timeline-block">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+          <ellipse cx="10" cy="20%" rx="10" ry="10" />
+        </svg>
+        <div class="timeline-block-content fade-in">
+          <p>
+            Il vient de commencer sa sieste. :)
+          </p>
+          <hr />
+          <div class="heure right">
+            <p>14h12</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Musique -->
+      <div class="timeline-block">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+          <ellipse cx="10" cy="20%" rx="10" ry="10" />
+        </svg>
+        <div class="timeline-block-content fade-in">
+          <audio controls>
+           <source src="notification.mp3" type="audio/mpeg">
+          </audio>
+          <div class="heure right">
+            <p>13h24</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="timeline-block">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+          <ellipse cx="10" cy="20%" rx="10" ry="10" />
+        </svg>
+        <div class="timeline-block-content fade-in">
+          <img src="repas.png">
+          <hr />
+          <div class="heure right">
+            <p>12h25</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texte -->
+      <div class="timeline-block">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+          <ellipse cx="10" cy="20%" rx="10" ry="10" />
+        </svg>
+        <div class="timeline-block-content fade-in">
+          <p>
+            Le repas est prêt !
+          </p>
+          <hr />
+          <div class="heure right">
+            <p>12h22</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vidéo -->
+      <div class="timeline-block">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+          <ellipse cx="10" cy="20%" rx="10" ry="10" />
+        </svg>
+        <div class="timeline-block-content fade-in">
+          <video controls="controls">
+            <source src="jouer.mp4" type="video/webm" />
+          </video>
+          <div class="heure right">
+            <p>10h14</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texte -->
+      <div class="timeline-block">
+        <svg class="line" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="9" y="0" width="2" height="100%" />
+          <ellipse cx="10" cy="20%" rx="10" ry="10" />
+        </svg>
+        <div class="timeline-block-content fade-in">
+          <p>
+            Ce matin, on joue. :)
+          </p>
+          <hr />
+          <div class="heure right">
+            <p>12h02</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+      function fadeIn() {
+        $('.fade-in').each(function(i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() * 0.5;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if(bottom_of_window > bottom_of_object) {
+                $(this).animate({'opacity':'1'},500);
+                $(this).parent().find('ellipse').animate({'opacity':'1'},500);
+            }
+        });
+      }
+      $(document).ready(function() {
+        fadeIn();
+        $(window).scroll(function() {
+            fadeIn();
+        });
+      });
+    </script>
+  </body>
+</html>
